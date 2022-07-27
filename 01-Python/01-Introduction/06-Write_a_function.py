@@ -15,7 +15,7 @@
 # Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
 
 
-# Sample Code
+# Sample Code!
 
 def is_leap(year):
     leap = False
