@@ -4,7 +4,7 @@
 # The second line contains the difference of the two numbers (first - second).
 # The third line contains the product of the two numbers.
 
-# Sample Code
+# Sample Code!
 
 if __name__ == '__main__':
     a = int(input())
