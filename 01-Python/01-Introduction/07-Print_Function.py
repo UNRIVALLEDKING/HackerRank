@@ -6,7 +6,7 @@
 
 # Note that "..." represents the consecutive values in between.
 
-# Sample Code
+# Sample Code!
 
 if __name__ == '__main__':
     n = int(input())
