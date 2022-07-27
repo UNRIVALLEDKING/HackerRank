@@ -6,7 +6,7 @@
 
 # No rounding or formatting is necessary.
 
-# Sample Code
+# Sample Code!
 
 if __name__ == '__main__':
     a = int(input())
