@@ -7,7 +7,7 @@
 
 # if __name__ == '__main__':
 thislist = [('basd', 6.0), ('sadsa', 3.0), ('asdfj', 8.0)]
-# records = []
+records = []
 
 # for _ in range(int(input())):
 #     name = input()
