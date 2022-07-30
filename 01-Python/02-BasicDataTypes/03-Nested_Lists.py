@@ -6,8 +6,8 @@
 
 
 # if __name__ == '__main__':
-thislist = [('basd', 6.0), ('sadsa', 3.0), ('asdfj', 8.0)]
-records = []
+thislist = [['basd', 6.0], ['sadsa', 3.0], ['asdfj', 8.0], ['nsdfj', 6.0]]
+# records = []
 
 # for _ in range(int(input())):
 #     name = input()
@@ -21,3 +21,11 @@ records = []
 # thislist = sorted(thislist, key=lambda x: float(x))
 thislist = sorted(thislist, key=lambda x: float(x[1]))
 print(thislist)
+output = thislist[1]
+print(output)
+expectedScore = output[1]
+print(expectedScore)
+
+for i in thislist:
+    if any(expectedScore in listitem for listitem in thislist):
+        print(i[0])
