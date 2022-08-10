@@ -5,27 +5,29 @@
 # Sample Code
 
 
-# if __name__ == '__main__':
-thislist = [['basd', 6.0], ['sadsa', 3.0], ['asdfj', 8.0], ['nsdfj', 6.0]]
-# records = []
+if __name__ == '__main__':
+    records = []
 
-# for _ in range(int(input())):
-#     name = input()
-#     score = float(input())
-#     thislist = [name, score]
-#     print(thislist)
-#     records.append(thislist)
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        thislist = [name, score]
+        records.append(thislist)
+records = sorted(records, key=lambda x: float(x[1]))
 
+minlist = records[0]
+minscore = minlist[1]
+li = []
+newlist = []
+for i in records:
+    if minscore in i:
+        li.append(i)
+    else:
+        newlist.append(i)
 
-# thislist.sort()
-# thislist = sorted(thislist, key=lambda x: float(x))
-thislist = sorted(thislist, key=lambda x: float(x[1]))
-print(thislist)
-output = thislist[1]
-print(output)
-expectedScore = output[1]
-print(expectedScore)
-
-for i in thislist:
-    if any(expectedScore in listitem for listitem in thislist):
+secondGrade = newlist[0]
+marks = secondGrade[1]
+newlist = sorted(newlist)
+for i in newlist:
+    if marks in i:
         print(i[0])
