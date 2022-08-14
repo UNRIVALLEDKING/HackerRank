@@ -28,6 +28,8 @@ def print_formatted(number):
         print(str(i).rjust(length, " "), oct(i)[2:].rjust(length, " "), hex(
             i)[2:].upper().rjust(length, " "), bin(i)[2:].rjust(length, " "))
 
+# or we can use this method too instead of above for loop
+
     # for i in range(1, number + 1):
     #     f = ""
     #     for c in "doXb":
