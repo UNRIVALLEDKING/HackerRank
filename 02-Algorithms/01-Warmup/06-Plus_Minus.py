@@ -16,6 +16,8 @@
 # The function should not return a value.
 
 
+# Sample Code
+
 #!/bin/python3
 
 import math
