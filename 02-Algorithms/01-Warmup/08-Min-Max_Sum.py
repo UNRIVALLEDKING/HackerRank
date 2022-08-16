@@ -20,14 +20,22 @@ import sys
 
 def miniMaxSum(arr):
     # Write your code here
+    # Method 1
     arr.sort()
-    min = 0
-    max = 0
+    minimun = 0
+    maximum = 0
     for i in range(4):
-        min += arr[i]
+        minimun += arr[i]
     for i in range(1, 5):
-        max += arr[i]
-    print(min, max)
+        maximum += arr[i]
+    print(minimun, maximum)
+
+    # Method 2 (Use any one, comment other to pass all text cases)
+
+    total = sum(arr)
+    minimun = total - max(arr)
+    maximum = total - min(arr)
+    print(minimun, maximum)
 
 
 if __name__ == '__main__':
