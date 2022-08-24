@@ -42,26 +42,21 @@ import sys
 
 def getTotalX(a, b):
     # Write your code here
-    # count = []
-    # final = []
-    # for i in range(max(a), min(b)):
-    #     for j in range(0, len(a)):
-    #         if i % a[j] != 0:
-    #             break
-    #         else:
-    #             count.append(i)
-    # for k in count:
-    #     for m in range(0, len(b)):
-    #         if b[m] % k != 0:
-    #             break
-    #         else:
-    #             final.append(k)
-    # return len(set(final))
-    ans = 0
-    for i in range(1, 101):
-        if all(i % x == 0 for x in a) and all(x % i == 0 for x in b):
-            ans += 1
-    return ans
+    result = 0
+    for i in range(min(a), max(b)+1):
+        isFactor = True
+        for j in a:
+            if i % j != 0:
+                isFactor = False
+                break
+        if isFactor:
+            for k in b:
+                if k % i != 0:
+                    isFactor = False
+                    break
+        if isFactor:
+            result += 1
+    return result
 
 
 if __name__ == '__main__':
