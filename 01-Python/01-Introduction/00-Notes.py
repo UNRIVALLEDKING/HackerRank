@@ -25,3 +25,44 @@ print(new_string)
 print(my_string)
 
 # this will print all those values that we have stored in those variables. as we can see here that we didn't used any Quotation mark here 'cause we are using variables and calling that variable inside the print function.
+
+# Python If Else
+
+a = 18
+b = int(input("What's your age? "))
+
+if b >= a:
+    print("You are an adult")
+else:
+    print("Your aren't an adult")
+
+# Here we are taking an input and converting it into integer {int() converts the number into an integer}.
+# then telling the program that if the number received is greater than a i.e, 18 then print that the the user is an adult.
+# else in all other cases he is a child not an adult.
+
+# Elif, AND & OR
+
+x = 20
+teen = 13
+
+age = int(input("What's your age? "))
+
+if age >= teen and age < x:
+    print("You're a Teenager.")
+elif age >= x:
+    print("You're an adult.")
+else:
+    print("You're a child.")
+
+
+# We can also write the above program as this. this method is without using AND
+
+if teen <= age < x:
+    print("You're a Teenager.")
+elif age >= x:
+    print("You're an adult.")
+else:
+    print("You're a child.")
+
+
+# <----------------- Part 1 Over ----------------->
