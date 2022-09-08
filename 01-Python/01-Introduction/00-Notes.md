@@ -1,18 +1,18 @@
-# Python Print Function
+## Python Print Function
 
 This will print everything inside Quotation marks "......" .
 
-```bash
+```
 print("Hello World!")
 ```
 
 We can also use single quote instead of double like here.
 
-```bash
+```
 print('Hello World!')
 ```
 
-## printing something using variables.
+### printing something using variables.
 
 let's assume there is a variable (variables are container that stores a value).
 this_string = "Hello World!"
@@ -29,7 +29,7 @@ this_string = "Hello, I'm back using same variable name twice in a same file. th
 
 as we can see here we can name the string anything we want and use it to store any value we want.
 
-## let's print these variables
+### let's print these variables
 
 ```
 print(this_string)
@@ -39,7 +39,7 @@ print(my_string)
 
 this will print all those values that we have stored in those variables. as we can see here that we didn't used any Quotation mark here 'cause we are using variables and calling that variable inside the print function.
 
-# Python If Else
+## Python If Else
 
 ```
 a = 18
@@ -55,7 +55,7 @@ Here we are taking an input and converting it into integer {int() converts the n
 then telling the program that if the number received is greater than a i.e, 18 then print that the the user is an adult.
 else in all other cases he is a child not an adult.
 
-# Elif, AND & OR
+## Elif, AND & OR
 
 ```
 x = 20
