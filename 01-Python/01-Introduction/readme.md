@@ -1,4 +1,4 @@
-# Python Introduction Notes
+<h1 align="center"> Python Introduction Notes</h1>
 
 ## Python Print Function
 
