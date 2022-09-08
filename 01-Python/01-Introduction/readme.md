@@ -26,7 +26,7 @@ here are some examples what we can store in a variable.
 ```bash
 new_string = "This is UNRIVALLEDKING'S Repo."
 my_string = "What do you want to store in this variable?"
-this_string = "Hello, I'm back using same variable name twice in a same file. this will overwrite the previous value of this_string."
+my_string = "Hello, I'm back using same variable name twice in a same file. this will overwrite the previous value of this_string."
 ```
 
 as we can see here we can name the string anything we want and use it to store any value we want.
