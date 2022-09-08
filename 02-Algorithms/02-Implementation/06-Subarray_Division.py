@@ -54,9 +54,10 @@ import sys
 def birthday(s, d, m):
     # Write your code here
     count = 0
-    for i in range(len(s)-1):
-        if s[i] + s[i+1] == d:
+    for i in range(len(s)-m+1):
+        if d == sum(s[i:i+m]):
             count += 1
+    return count
 
 
 if __name__ == '__main__':
