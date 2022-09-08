@@ -1,16 +1,16 @@
-<h1 align="center"> Python Introduction Notes</h1>
+<h1 align="center">Python Introduction Notes 🚀</h1>
 
 ## Python Print Function
 
 This will print everything inside Quotation marks "......" .
 
-```
+```bash
 print("Hello World!")
 ```
 
 We can also use single quote instead of double like here.
 
-```
+```bash
 print('Hello World!')
 ```
 
@@ -23,7 +23,7 @@ here this_string is the variable that store "Hello World!" we can store anything
 
 here are some examples what we can store in a variable.
 
-```
+```bash
 new_string = "This is UNRIVALLEDKING'S Repo."
 my_string = "What do you want to store in this variable?"
 this_string = "Hello, I'm back using same variable name twice in a same file. this will overwrite the previous value of this_string."
@@ -33,7 +33,7 @@ as we can see here we can name the string anything we want and use it to store a
 
 ### let's print these variables
 
-```
+```bash
 print(this_string)
 print(new_string)
 print(my_string)
@@ -43,7 +43,7 @@ this will print all those values that we have stored in those variables. as we c
 
 ## Python If Else
 
-```
+```bash
 a = 18
 b = int(input("What's your age? "))
 
@@ -59,7 +59,7 @@ else in all other cases he is a child not an adult.
 
 ## Elif, AND & OR
 
-```
+```bash
 x = 20
 teen = 13
 
@@ -75,7 +75,7 @@ else:
 
 We can also write the above program as this. this method is without using AND
 
-```
+```bash
 if teen <= age < x:
     print("You're a Teenager.")
 elif age >= x:
