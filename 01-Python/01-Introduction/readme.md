@@ -85,3 +85,54 @@ else:
 ```
 
 # <----------------- Part 1 Over ----------------->
+
+## Arithmetic Operators
+
+These operators are used for performing arithmetical operations.
+let's assume two numbers.
+
+```bash
+a = 12
+b = 3
+```
+
+### Addition
+
+```bash
+print(a+b)
+```
+
+### Subtraction
+
+```bash
+print(a-b)
+```
+
+### Multiplication
+
+```bash
+print(a*b)
+```
+
+### Division
+
+```bash
+print(a/b)
+```
+
+### Exponent
+
+```bash
+print(a**n) # where n is exponential number like
+
+print(a**2)
+print(a**3)
+```
+
+### Remainder
+
+```bash
+print(a%b)
+```
+
+# <----------------- Part 2 Over ----------------->
