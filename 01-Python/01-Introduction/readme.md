@@ -136,3 +136,160 @@ print(a%b)
 ```
 
 # <----------------- Part 2 Over ----------------->
+
+## Type Conversion
+
+Sometimes it's necessary to perform conversions between the built-in types. To convert between types you simply use the type name as a function. In addition, several built-in functions are supplied to perform special kinds of conversions. All of these functions return a new object representing the converted value.
+
+```bash
+x = "12"
+
+# Here x is string. using type() function will return the type of the data.
+
+print(type(x))
+
+# now convert it to different data types.
+
+x = int(x) # This will convert x into an interger
+print(type(x)) # to print the dataType of the variable.
+x = float(x) # This will convert x into an interger
+print(type(x)) # to print the dataType of the variable.
+
+```
+
+## Loops
+
+Python has two loop commands
+
+- While Loop
+- For Loop
+
+<h3 align="center">While Loop 🔃</h3>
+<hr/>
+while loop executes a set of statements as long as a condition is true.
+
+```bash
+i = 1
+while i < 10:
+    print(i)
+    i += 1 # remember to increment i, or else the loop will continue forever
+```
+
+<h3 align="center">For Loop 🔃</h3>
+<hr/>
+For loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). with the
+
+`for` loop we can execute a set of statements, once for each item in a list, tuples, set, etc.
+
+- Looping through set/tuple/list.
+
+```bash
+fruits = ["apple", "mango", "orange", "pineapple",
+          "strawberry", "watermelon", "banana", "cherry"]
+
+for i in fruits:
+    print(i)
+```
+
+- Looping through a String.
+
+```bash
+for i in "Hello World!":
+    print(i)
+```
+
+## Break Statment
+
+`break` statement can stop the loop before it has looped through all the items.
+
+```bash
+fruits = ["apple", "mango", "orange", "pineapple",
+          "strawberry", "watermelon", "banana", "cherry"]
+
+for i in fruits:
+    if i == "strawberry":
+        break
+    print(i)
+```
+
+## Continue Statement
+
+`continue` statement can stop the current iteration of the loop and continue with the next ones.
+
+```bash
+fruits = ["apple", "mango", "orange", "pineapple",
+          "strawberry", "watermelon", "banana", "cherry"]
+
+for i in fruits:
+    if i == "strawberry":
+        continue
+    print(i)
+```
+
+<hr/>
+
+<h2 align="center">The range() Function</h2>
+
+The `range()` function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+
+Note : we can change the defaults according to our need.
+
+```bash
+for i in range(10):
+    print(i)
+# range(10) is not the values of 0 to 10, but the values 0 to 9
+```
+
+- Changing the default starting point
+
+```bash
+for i in range(3,10):
+    print(i)
+# range(3,10) which means values from 3 to 10 (but not including 10).
+```
+
+- Changing the default increment sequence
+
+```bash
+for i in range(4,10, 2):
+    print(i)
+# range(4,10,2) the third parameter here i.e, 2 is the increment value.
+```
+
+first parameter is starting value, second parameter is ending value (excluding the number itself) & the third one is increment value we can use this pattern to set up a list according to our need.
+
+<hr/>
+<h2 align="center">Write a Function</h2>
+
+A function is a block of code which only runs when it's called. we can pass data (paramenters) into a function.
+it can also return data as a result.
+
+- Creating a Funtion.
+
+```bash
+def my_function():
+    print("Hello, this is my first function.")
+```
+
+- Calling a Function
+
+```bash
+def my_function():
+    print("Hello, this is my first function.")
+
+my_function()
+```
+
+## Here are some more examples.
+
+```bash
+def hello(name):
+    print("Hello", name)
+
+hello("UNRIVALLEDKING")
+hello("Monkey D Luffy")
+hello("Zoro")
+hello("Harry")
+```
+
+# <---------------------- Python Introduction Over ---------------------->
