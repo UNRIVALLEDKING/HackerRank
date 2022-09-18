@@ -36,4 +36,15 @@ filterFruits = [x for x in fruits if "a" in x]
 print(filterFruits)
 ```
 
+## Sort Function
+
+Sorting list in ascending/descending order.
+
+```bash
+numbers = [3,55,64,2,4,6,2,4,676,432,64]
+print("Without Sorting",numbers)
+numbers = numbers.sort()
+print("After Sorting",numbers)
+```
+
 # <-------------------- Python Basic Data Types Over -------------------->
