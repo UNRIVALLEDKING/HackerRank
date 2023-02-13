@@ -39,6 +39,13 @@ import sys
 
 def migratoryBirds(arr):
     # Write your code here
+    arrSet=set(arr)
+    thisDict = {}
+    for i in arrSet:
+        thisDict[i]=arr.count(i)
+    v = list(thisDict.values())
+    k = list(thisDict.keys())
+    return k[v.index(max(v))]
 
 
 if __name__ == '__main__':
