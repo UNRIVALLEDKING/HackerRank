@@ -37,6 +37,28 @@ import sys
 
 def dayOfProgrammer(year):
     # Write your code here
+    if (year%4==0 and year%100!=0) or year%400==0:
+        print("Leap Year!")
+    else:
+        print("not leap year")
+
+    count=0
+    if(year>1918 and year<=2700):
+        if(year%400==0 or (year%4==0 and year%100!=0)):
+            count=1
+        if(count==1):
+            return ('12.09.'+str(year))
+        else:
+            return ('13.09.'+str(year))
+    if(year<1918 and year>=1700):
+        if(year%4==0):
+            count=1
+        if(count==1):
+            return ('12.09.'+str(year))
+        else:
+            return('13.09.'+str(year))
+    if(year==1918):
+        return ('26.09.1918')
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
